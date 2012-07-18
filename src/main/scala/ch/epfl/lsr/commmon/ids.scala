@@ -7,6 +7,6 @@ object IdProvider {
 
 trait HasId { 
   val id :Int = IdProvider.nextId
-  lazy val getIdentifier = id.toString
+  lazy val getIdentifier = "%6d" format id
 }
 
