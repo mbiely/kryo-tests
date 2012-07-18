@@ -19,7 +19,7 @@ object KryonetTestBuild extends AkkaBuild {
     Defaults.defaultSettings ++ super.settings ++ baseAssemblySettings ++ 
     Seq[Setting[_]](
        libraryDependencies ++= Seq(
-	 //"com.romix.akka" % "akka-kryo-serialization" % "0.1-SNAPSHOT"
+	 "com.romix.akka" % "akka-kryo-serialization" % "0.1-SNAPSHOT",
 	 "org.apache.commons" % "commons-math" % "2.2",
 	 "com.esotericsoftware.kryo" % "kryo" % "2.18-SNAPSHOT",
 	 "io.netty" % "netty" % "3.5.2.Final"
