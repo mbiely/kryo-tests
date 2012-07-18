@@ -1,10 +1,10 @@
-package ch.epfl.lsr.netty.akkabridge
+package ch.epfl.lsr.testing.netty.akkabridge
 
-import ch.epfl.lsr.common.{ Actors, Message }
+import ch.epfl.lsr.testing.common.{ Actors, Message }
 
-import ch.epfl.lsr.netty._
-import ch.epfl.lsr.netty.bootstrapping._
-import ch.epfl.lsr.netty.kryo._
+import ch.epfl.lsr.testing.netty._
+import ch.epfl.lsr.testing.netty.bootstrapping._
+import ch.epfl.lsr.testing.netty.kryo._
 
 import org.jboss.netty.channel._
 

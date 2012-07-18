@@ -1,4 +1,4 @@
-package ch.epfl.lsr.common
+package ch.epfl.lsr.testing.common
 
 import akka.actor._
 

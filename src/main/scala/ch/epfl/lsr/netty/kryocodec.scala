@@ -1,4 +1,4 @@
-package ch.epfl.lsr.netty.kryo
+package ch.epfl.lsr.testing.netty.kryo
 
 import com.esotericsoftware.kryo.Kryo
 import com.esotericsoftware.kryo.io.{ Input, Output }
@@ -10,7 +10,7 @@ import org.jboss.netty.channel._
 
 
 object KryoFactory  { 
-  import ch.epfl.lsr.common.Message
+  import ch.epfl.lsr.testing.common.Message
 
   def getKryo = { 
     val kryo = new Kryo()

@@ -1,9 +1,9 @@
-package ch.epfl.lsr.akkatest
+package ch.epfl.lsr.testing.akkatest
 	
 import akka.actor.{ ActorRef, Props, Actor, ActorSystem }
 import com.typesafe.config.ConfigFactory
 
-import ch.epfl.lsr.common._
+import ch.epfl.lsr.testing.common._
 
 object Config { 
   def serverPort = serverConfig.getInt("akka.remote.netty.port") 

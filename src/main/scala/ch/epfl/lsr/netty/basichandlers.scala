@@ -1,4 +1,4 @@
-package ch.epfl.lsr.netty
+package ch.epfl.lsr.testing.netty
 
 import org.jboss.netty.channel.SimpleChannelHandler
 import org.jboss.netty.channel.{ ChannelHandlerContext => NettyChannelHandlerContext, 

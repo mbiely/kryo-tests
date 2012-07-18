@@ -1,4 +1,4 @@
-package ch.epfl.lsr.common
+package ch.epfl.lsr.testing.common
 
 object IdProvider { 
   lazy val ai = new java.util.concurrent.atomic.AtomicInteger

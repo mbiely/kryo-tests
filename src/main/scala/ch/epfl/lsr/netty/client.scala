@@ -1,8 +1,8 @@
-package ch.epfl.lsr.netty
+package ch.epfl.lsr.testing.netty
 
-import ch.epfl.lsr.common._
-import ch.epfl.lsr.netty.kryo._
-import ch.epfl.lsr.netty.bootstrapping._
+import ch.epfl.lsr.testing.common._
+import ch.epfl.lsr.testing.netty.kryo._
+import ch.epfl.lsr.testing.netty.bootstrapping._
 
 import org.jboss.netty.bootstrap.Bootstrap
 import org.jboss.netty.channel._

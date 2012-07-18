@@ -1,4 +1,4 @@
-package ch.epfl.lsr.netty.bootstrapping
+package ch.epfl.lsr.testing.netty.bootstrapping
 
 import org.jboss.netty.bootstrap.{ Bootstrap, ServerBootstrap, ClientBootstrap }
 import org.jboss.netty.channel._

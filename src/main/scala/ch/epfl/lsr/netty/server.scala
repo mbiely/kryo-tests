@@ -1,9 +1,9 @@
-package ch.epfl.lsr.netty
+package ch.epfl.lsr.testing.netty
 
-import ch.epfl.lsr.netty.kryo._
-import ch.epfl.lsr.netty.bootstrapping._
+import ch.epfl.lsr.testing.netty.kryo._
+import ch.epfl.lsr.testing.netty.bootstrapping._
 
-import ch.epfl.lsr.common.ImplicitSocketAddresses._
+import ch.epfl.lsr.testing.common.ImplicitSocketAddresses._
 
 class ObjectEchoHandler[T] extends MessageReceivedHandler { 
 
@@ -15,7 +15,7 @@ class ObjectEchoHandler[T] extends MessageReceivedHandler {
 }
 
 object ServerMain { 
-  import ch.epfl.lsr.common.Message
+  import ch.epfl.lsr.testing.common.Message
 
   def main(args :Array[String])  {
     val bootstrap = NIOSocketServer.bootstrap("child.tcpNoDelay" -> true, "child.keepAlive" -> true) { 
