@@ -37,7 +37,7 @@ trait SimpleSummaryStats {
   def report = { 
     val duration = (lastRequestTS - firstRequestTS)/1000.0/1000/1000;
     val thrpt = stats.getN() / duration;  //"CLIENT "+clientID+" finishing time "+ System.nanoTime()+" last request "+lastRequestTS+" \n"+
-    val str = "%s %5d %6.2f %6.2f %6.2f %6.2f %6.2f".format(getIdentifier, stats.getN(), thrpt, stats.getMean(), stats.getStandardDeviation(), stats.getMin(), stats.getMax())
+    val str = "%s %6d %6.2f %6.2f %6.2f %6.2f %6.2f".format(getIdentifier, stats.getN(), thrpt, stats.getMean(), stats.getStandardDeviation(), stats.getMin(), stats.getMax())
     str
   }
 }
