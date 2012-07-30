@@ -7,6 +7,8 @@ import ch.epfl.lsr.testing.netty.bootstrapping._
 import org.jboss.netty.bootstrap.Bootstrap
 import org.jboss.netty.channel._
 
+import collection.immutable.List
+
 
 
 class MessageEchoClient() extends MessageReceivedHandler with SimpleSummaryStats with HasId { 
@@ -25,7 +27,7 @@ class MessageEchoClient() extends MessageReceivedHandler with SimpleSummaryStats
   }
   
   override def channelConnected(ctx :ChannelHandlerContext, e :ChannelStateEvent) { 
-    e.getChannel.write(new Message(id,0))
+    e.getChannel.write(new Message(id,0,List(1,2,3)))
   }
 }
 
